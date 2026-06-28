@@ -1,0 +1,94 @@
+name: ToxiCrab
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  camera: ^0.10.5+5
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  image_picker: ^1.2.1
+  gal: ^2.3.2
+  path_provider: ^2.1.5
+
+  # ── Offline inference ──────────────────────────────────────────────────────
+  tflite_flutter: ^0.12.1
+  image: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1        # ← added
+
+# ── Launcher icon config ───────────────────────────────────────────────────
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/LOGO OFFICIAL.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#000000"   # your app's gold theme color
+  adaptive_icon_foreground: "assets/images/LOGO OFFICIAL.png"
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: InclusiveSans
+      fonts:
+        - asset: assets/fonts/InclusiveSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/InclusiveSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/InclusiveSans-Bold.ttf
+          weight: 700
+
+    - family: HindVadodara
+      fonts:
+        - asset: assets/fonts/HindVadodara-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/HindVadodara-Bold.ttf
+          weight: 700
+
+  assets:
+    # ── Model ──────────────────────────────────────────────────────────────
+    - assets/models/toxicrab.tflite
+
+    # ── Images ─────────────────────────────────────────────────────────────
+    - assets/images/home.png
+    - assets/images/camera.png
+    - assets/images/night-mode.png
+    - assets/images/light-mode.png
+    - assets/images/LOGO OFFICIAL.png
+    - assets/images/1.png
+    - assets/images/2.png
+    - assets/images/3.png
+    - assets/images/4.png
+    - assets/images/unknown.jpg
+    - assets/images/back.png
+    - assets/images/Curry_TOXIC.png
+    - assets/images/Demon_TOXIC.png
+    - assets/images/Devil_TOXIC.png
+    - assets/images/Floral_TOXIC.png
+    - assets/images/Mosaic_TOXIC.png
+    - assets/images/1blue_NON.png
+    - assets/images/2brown_NON.png
+    - assets/images/3coconut_NON.png
+    - assets/images/4coral_NON.png
+    - assets/images/5crenate_NON.png
+    - assets/images/6curacha_NON.png
+    - assets/images/7horned_NON.png
+    - assets/images/8moon_NON.png
+    - assets/images/9mud_NON.png
+    - assets/images/10ridged_NON.png
+    - assets/images/11river_NON.png
+    - assets/images/12sentinel_NON.png
+    - assets/images/13smooth_NON.png
+    - assets/images/14three_NON.png
